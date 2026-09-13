@@ -18,6 +18,7 @@
 
 - The project is named `gd_quarth` and is developed with Godot Engine. Treat `project.godot`, Godot scenes/resources, and GDScript as the authoritative project structure, and use Godot-compatible workflows and conventions.
 - The game is a modern puzzle-shooter based on Konami's *Quarth*. Preserve shape- and position-based play that does not require color identification, while increasing meaningful decisions and reducing repetitive input after a solution is already understood.
+- The initial gameplay specification is `資料/仕様/gd_quarthゲーム仕様.md`. Its current baseline uses rotatable 1–4 cell polyomino shots, three-piece NEXT plus one HOLD slot, rigid first-contact locking, outline-completed rectangle clearing, and short quota-based waves that reset the board.
 - Store project-specific specifications, design references, research notes, and development/support tools under the repository-root `資料/` directory.
 - Organize specifications and reference material under `資料/仕様/`, and repository-specific helper tools and scripts under `資料/ツール/`. Create these subdirectories when content of that type is first added.
 - Keep runtime game source and assets in the Godot project rather than `資料/`; the `資料/` directory is for supporting material and tooling, not shipped game content.

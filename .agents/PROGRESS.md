@@ -3,24 +3,23 @@
 ## Current task
 
 - Status: Complete
-- Objective: Research and document the original Quarth's rules, strengths, and causes of modern-day monotony as a design reference for `gd_quarth`.
+- Objective: Define the first implementable game specification for `gd_quarth`, including multi-cell shots, rotation, shot-order control, rectangle clearing, and wave replacement.
 
 ## Completed
 
-- Reviewed Konami's official overview and Nintendo's Game Boy manual.
-- Cross-checked arcade-specific details against an arcade strategy reference and a secondary design critique.
-- Separated confirmed rules from design interpretation and platform-specific additions.
-- Created `資料/仕様/クォース原作分析.md` covering the rules, strengths, monotony analysis, inheritance principles, and open verification items.
-- Recorded the durable design direction in `AGENTS.md`.
+- Reconciled the new request with `資料/仕様/クォース原作分析.md`.
+- Chose a recommended baseline: three-piece preview plus one HOLD slot rather than unrestricted up/down selection.
+- Defined the design goals and the main interaction risks that need explicit rules.
+- Created `資料/仕様/gd_quarthゲーム仕様.md` with deterministic rules for controls, generation, flight, locking, rectangle detection, clearing, scoring, wave progression, difficulty, tutorial, accessibility, and prototype scope.
+- Recorded the specification path and baseline decisions in `AGENTS.md`.
 
 ## Remaining
 
-- None for this research summary. Arcade timing and edge-case behavior listed under the document's "確認が必要な事項" should be verified before implementing an exact rules engine.
+- None for the initial specification. The alternatives in section 17 require playtesting before their parameters become final.
 
 ## Verification
 
-- Primary sources confirm the 1989 arcade origin and core rectangle-completion rule.
-- The official Game Boy manual confirms controls, hollow-rectangle clearing, score incentives, stage structure, and items for that port.
-- Reviewed all 233 lines and labeled port-specific and non-official claims rather than presenting them as confirmed arcade behavior.
-- Confirmed all five cited source URLs resolve through the research tools.
+- Re-read the complete specification and removed a contradictory top-boundary locking rule.
+- Confirmed the specification distinguishes adopted baseline behavior from playtest alternatives.
+- Confirmed the initial playable scope contains every required core mechanic without unrelated progression systems.
 - `git diff --check` passes.
