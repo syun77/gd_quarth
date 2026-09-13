@@ -17,6 +17,7 @@
 ## Project identity and materials
 
 - The project is named `gd_quarth` and is developed with Godot Engine. Treat `project.godot`, Godot scenes/resources, and GDScript as the authoritative project structure, and use Godot-compatible workflows and conventions.
+- The game is a modern puzzle-shooter based on Konami's *Quarth*. Preserve shape- and position-based play that does not require color identification, while increasing meaningful decisions and reducing repetitive input after a solution is already understood.
 - Store project-specific specifications, design references, research notes, and development/support tools under the repository-root `資料/` directory.
 - Organize specifications and reference material under `資料/仕様/`, and repository-specific helper tools and scripts under `資料/ツール/`. Create these subdirectories when content of that type is first added.
 - Keep runtime game source and assets in the Godot project rather than `資料/`; the `資料/` directory is for supporting material and tooling, not shipped game content.
