@@ -24,6 +24,7 @@
 - Keep runtime game source and assets in the Godot project rather than `資料/`; the `資料/` directory is for supporting material and tooling, not shipped game content.
 - The Godot project root is `gd_quarth/gd-quarth/`; repository-level specifications remain under `資料/`.
 - The current implementation baseline is documented in `資料/仕様/Godot実装設計.md`. Keep deterministic board rules under `src/model/`, rendering/input nodes under `src/objects/`, and use `Main.gd` only for high-level composition and scene flow.
+- Godot is available at `/Applications/Godot_mono.app/Contents/MacOS/Godot`; use `--log-file /tmp/<name>.log` for sandboxed headless runs because the default `user://logs` location is not writable.
 - When adding or relocating specifications or tools, update every reference and command that points to them.
 
 ## Keep work resumable
